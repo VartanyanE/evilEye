@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "evilEye",
+    "slug": "evilEye",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "evilEye"
+}
