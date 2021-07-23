@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const MainPage = () => {
 
@@ -8,9 +8,15 @@ const MainPage = () => {
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity
+      onPress={() => {
+        console.log('works');
+      }}>
+      <Image 
       
-      <Image style={styles.image} source = {require('../assets/evilEye.jpg')} />
-    </View>
+      style={styles.image} source = {require('../assets/evilEye.jpg')} />
+   </TouchableOpacity> 
+   </View>
   );
 };
 
@@ -21,8 +27,9 @@ const styles = StyleSheet.create({
         height: "100%"
     },
     image : {
-      height: 150 ,
-      width: 150,
+      marginTop: "50%",
+      height: 400,
+      width: 400,
       alignSelf: 'center',
     }
 });
